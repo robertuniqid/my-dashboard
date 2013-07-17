@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Facebook</title>
+
+      <style>
+        @import "assets/styles/style.css";
+      </style>
+
+      <script src="assets/scripts/jquery-1.9.1.js" type="text/javascript"></script>
+      <script src="assets/scripts/layout_helper_dashboard.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function(event){
+          LayoutHelperDashboard.Init({
+            trigger   : $('#show-dashboard'),
+            namespace : 'dashboard-component',
+            elements  : [
+              {
+                name  : 'Product Administration',
+                link  : 'http://www.google.ro'
+              },
+              {
+                name  : 'Order Administration',
+                link  : 'http://www.google.ro'
+              }
+            ]
+          });
+        });
+      </script>
+    </head>
+
+    <body>
+      <section class="wrapper">
+        TEEEST
+
+        <a id="show-dashboard">Show dashboard</a>
+      </section>
+    </body>
+</html>
