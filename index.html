@@ -11,17 +11,39 @@
       <script src="assets/scripts/layout_helper_dashboard.js" type="text/javascript"></script>
       <script type="text/javascript">
         $(document).ready(function(event){
+
+          $.ajax({
+            type: "POST",
+            url: "some.php",
+            data: { name: "John", location: "Boston" }
+          }).done(function( msg ) {
+            alert( "Data Saved: " + msg );
+          });
+
           LayoutHelperDashboard.Init({
             trigger   : $('#show-dashboard'),
             namespace : 'dashboard-component',
-            elements  : [
+            elements_groups : [
               {
-                name  : 'Product Administration',
-                link  : 'http://www.google.ro'
+                name     : "Something",
+                class    : 'group-class',
+                link     : 'http://www.google.ro'
               },
               {
-                name  : 'Order Administration',
-                link  : 'http://www.google.ro'
+                name     : "Something",
+                class    : 'group-class',
+                elements : [
+                  {
+                    name  : 'Product Administration',
+                    link  : 'http://www.google.ro',
+                    class : 'group-element-class'
+                  },
+                  {
+                    name  : 'Order Administration',
+                    link  : 'http://www.google.ro',
+                    class : 'group-element-class'
+                  }
+                ]
               }
             ]
           });

@@ -5,5 +5,6 @@
 }
 
 #dashboard-component-container {
-  background: blue;
+  background: #F8F8F8;
+  border: 2px solid #F4F4F4;
 }

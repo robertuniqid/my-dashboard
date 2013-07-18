@@ -16,7 +16,8 @@ var LayoutHelperDashboard = {
   _triggerObject     : null,
   _dashboardObject   : null,
   _dashboardObjectElementsContainer : null,
-  _dashboardElements : {},
+  _dashboardElementGroups : {},
+  _dashboardGroupContainers : {},
 
   Init : function(options) {
     this._options = options;
@@ -26,8 +27,8 @@ var LayoutHelperDashboard = {
     if(typeof this._options.trigger != "undefined")
       this._triggerObject = typeof this._options.trigger == "object" ? this._options.trigger : $(this._options.trigger);
 
-    if(typeof this._options.elements != "undefined")
-      this._dashboardElements = typeof this._options.elements == "object" ? $.makeArray(this._options.elements) : this._options.elements;
+    if(typeof this._options.elements_groups != "undefined")
+      this._dashboardElementGroups = typeof this._options.elements_groups == "object" ? $.makeArray(this._options.elements_groups) : this._options.elements_groups;
 
     if(typeof this._options.namespace != "undefined")
       this.namespace = this._options.namespace;
@@ -45,7 +46,7 @@ var LayoutHelperDashboard = {
     var html = '';
 
     html += '<section id="' + this.namespace + '-container" class="' + this.namespace + '">' +
-              '<section class="elements_container"></section>' +
+              '<section class="element_groups_container"></section>' +
             '</section>';
 
     this.layoutBodyObject.append(html);
@@ -56,23 +57,64 @@ var LayoutHelperDashboard = {
 
   _assignDashboardContent : function() {
     var objectInstance = this;
-    this._dashboardObjectElementsContainer = this._dashboardObject.find('.elements_container');
+    this._dashboardObjectElementsContainer = this._dashboardObject.find('.element_groups_container');
     this._dashboardObjectElementsContainer.html();
 
-    $.each(this._dashboardElements, function(index){
+    $.each(this._dashboardElementGroups, function(index){
       objectInstance
           ._dashboardObjectElementsContainer
           .append(
               objectInstance._fetchDashboardElementHTMLAtIndex(index)
           );
     });
+
+    $.each(this._dashboardElementGroups, function(group_index){
+      if(typeof objectInstance._dashboardElementGroups[group_index]['elements'] != "undefined") {
+        var html = '<section style="display:none" data-group-index="' + group_index+ '" class="dashboard-group-container dashboard-group-container-' + group_index + '">';
+
+        $.each(objectInstance._dashboardElementGroups[group_index].elements, function(element_index){
+          html += objectInstance._fetchDashboardGroupElementHTMLAtGroupAtIndex(group_index, element_index);
+        });
+
+        html    += '</section>';
+
+        objectInstance._dashboardObjectElementsContainer.append(html);
+      }
+    });
+
+    this._dashboardGroupContainers = this._dashboardObjectElementsContainer.find('.dashboard-group-container');
+    this._assignDashboardElementsTriggers();
   },
 
-  _fetchDashboardElementHTMLAtIndex : function(index) {
-    if(typeof this._dashboardElements[index] == "undefined")
+  _fetchDashboardElementHTMLAtIndex : function(group_index) {
+    if(typeof this._dashboardElementGroups[group_index] == "undefined")
       return '';
 
-    var elementInformation = this._dashboardElements[index];
+    var elementInformation = this._dashboardElementGroups[group_index];
+
+    var html = '';
+
+    if(typeof elementInformation.elements == "undefined")
+     html = '<section class="element ' + (typeof elementInformation.class == "undefined" ? '' : elementInformation.class) + '">' +
+                '<a href="' + elementInformation.link + '">' +
+                  '<span>' + elementInformation.name + '</span>' +
+                '</a>' +
+               '</section>';
+    else
+      html = '<section class="element ' + (typeof elementInformation.class == "undefined" ? '' : elementInformation.class) + '">' +
+              '<a data-group-index="' + group_index+ '" class="display-dashboard-group dashboard-group-' + group_index + '">' +
+                '<span>' + elementInformation.name + '</span>' +
+              '</a>' +
+             '</section>';
+
+    return html;
+  },
+
+  _fetchDashboardGroupElementHTMLAtGroupAtIndex : function(group_index, index) {
+    if(typeof this._dashboardElementGroups[group_index]['elements'][index] == "undefined")
+      return '';
+
+    var elementInformation = this._dashboardElementGroups[group_index]['elements'][index];
 
     var html = '<section class="element">' +
                 '<a href="' + elementInformation.link + '">' +
@@ -91,18 +133,38 @@ var LayoutHelperDashboard = {
     });
   },
 
+  _assignDashboardElementsTriggers : function() {
+    var objectInstance = this;
+
+    this._dashboardObjectElementsContainer.find('.display-dashboard-group').bind('click', function(){
+      var group_index = $(this).data('group-index');
+
+      objectInstance._dashboardGroupContainers
+          .not('[data-group-index="' + group_index + '"]')
+          .fadeOut('slow')
+          .promise()
+          .done(function(){
+        objectInstance._dashboardGroupContainers.filter('[data-group-index="' + group_index + '"]').fadeIn('slow');
+      });
+    });
+  },
+
   Display : function() {
     var objectInstance = this;
 
-    this._arrangeDashboardContainer();
+    objectInstance._arrangeDashboardContainer();
 
-    this.layoutBodyObject.children().hide();
-    this._dashboardObject.show();
+    this.layoutBodyObject.children().fadeOut('fast').promise().done(function(){
+      objectInstance._dashboardObject.fadeIn('slow');
+    });
 
     this._assignResizeEvent();
   },
 
   Close   : function() {
+    this.layoutBodyObject.children().fadeIn('slow');
+    this._dashboardObject.fadeOut('slow');
+
     this._unAssignResizeEvent();
   },
 
@@ -126,6 +188,9 @@ var LayoutHelperDashboard = {
         unAssignedWidth  = windowWidth,
         unAssignedHeight = windowHeight,
         proposedDelimiter = (windowHeight * 0.025);
+
+    unAssignedHeight -= (parseInt(this._dashboardObject.css('border-top-width'), 10) + parseInt(this._dashboardObject.css('border-bottom-width'), 10));
+    unAssignedWidth -= (parseInt(this._dashboardObject.css('border-left-width'), 10) + parseInt(this._dashboardObject.css('border-right-width'), 10));
 
     var paddingX = proposedDelimiter,
         paddingY = proposedDelimiter,
