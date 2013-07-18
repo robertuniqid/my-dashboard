@@ -4,14 +4,15 @@ var LayoutHelperDashboard = {
   layoutBodyObject   : null,
   isDisplayed        : false,
   _options           : {
-    min_margin_x : 10,
-    max_margin_x : 50,
-    min_margin_y : 10,
-    max_margin_y : 30,
-    min_padding_x : 10,
-    max_padding_x : 25,
-    min_padding_y : 5,
-    max_padding_y : 15
+    elementEffectIn : 'fadeInLeft',
+    minMarginX : 10,
+    maxMarginX : 50,
+    minMarginY : 10,
+    maxMarginY : 30,
+    minPaddingX : 10,
+    maxPaddingX : 25,
+    minPaddingY : 5,
+    maxPaddingY : 15
   },
   _triggerObject     : null,
   _dashboardObject   : null,
@@ -20,7 +21,7 @@ var LayoutHelperDashboard = {
   _dashboardGroupContainers : {},
 
   Init : function(options) {
-    this._options = options;
+    this._options = $.extend({}, this._options, options);
 
     this.layoutBodyObject = $('body');
 
@@ -155,11 +156,38 @@ var LayoutHelperDashboard = {
 
     objectInstance._arrangeDashboardContainer();
 
+    objectInstance._dashboardObjectElementsContainer.find(' > .element').hide();
+
     this.layoutBodyObject.children().fadeOut('fast').promise().done(function(){
-      objectInstance._dashboardObject.fadeIn('slow');
+      objectInstance._dashboardObject.fadeIn('slow').promise().done(function(){
+        objectInstance.RecursiveAssignElementEffect();
+      });
     });
 
     this._assignResizeEvent();
+  },
+
+  RecursiveAssignElementEffect : function() {
+    var objectInstance = this;
+
+    if(this._haveAllDashboardElementsTriggered() ) {
+      return;
+    }
+
+    this._dashboardObjectElementsContainer
+        .find('> .element')
+        .not(':visible')
+        .filter(':first')
+        .show()
+        .addClass('animated ' + objectInstance._options.elementEffectIn);
+
+    setTimeout(function(){
+      objectInstance.RecursiveAssignElementEffect();
+    }, 50)
+  },
+
+  _haveAllDashboardElementsTriggered : function() {
+    return !(this._dashboardObjectElementsContainer.find('> .element:hidden').length > 0);
   },
 
   Close   : function() {
@@ -198,10 +226,10 @@ var LayoutHelperDashboard = {
         marginX  = proposedDelimiter,
         marginY  = proposedDelimiter;
 
-    paddingX = (paddingX >= this._options.max_padding_x) ? this._options.max_padding_x : (paddingX < this._options.min_padding_x ? this._options.min_padding_x : paddingX);
-    paddingY = (paddingY >= this._options.max_padding_y) ? this._options.max_padding_y : (paddingY < this._options.min_padding_y ? this._options.min_padding_y : paddingY);
-    marginX = (marginX >= this._options.max_margin_x) ? this._options.max_margin_x : (marginX < this._options.min_margin_x ? this._options.min_margin_x : marginX);
-    marginY = (marginY >= this._options.max_margin_y) ? this._options.max_margin_y : (marginY < this._options.max_margin_y ? this._options.max_margin_y : marginY);
+    paddingX = (paddingX >= this._options.maxPaddingX) ? this._options.maxPaddingX : (paddingX < this._options.minPaddingX ? this._options.minPaddingX : paddingX);
+    paddingY = (paddingY >= this._options.maxPaddingY) ? this._options.maxPaddingY : (paddingY < this._options.minPaddingY ? this._options.minPaddingY : paddingY);
+    marginX = (marginX >= this._options.maxMarginX) ? this._options.maxMarginX : (marginX < this._options.minMarginX ? this._options.minMarginX : marginX);
+    marginY = (marginY >= this._options.maxMarginY) ? this._options.maxMarginY : (marginY < this._options.maxMarginY ? this._options.maxMarginY : marginY);
 
     unAssignedWidth  -= ((paddingX + marginX) * 2);
     unAssignedHeight -= ((paddingY + marginY) * 2);
