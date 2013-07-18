@@ -83,6 +83,7 @@ var LayoutHelperDashboard = {
     });
 
     this._dashboardGroupContainers = this._dashboardObjectElementsContainer.find('.dashboard-group-container');
+    this._dashboardObjectElementsContainer.find('> .element:last').addClass('clearfix');
     this._assignDashboardElementsTriggers();
   },
 
