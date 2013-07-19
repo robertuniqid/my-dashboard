@@ -1,76 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7c76689-0716-4924-84bd-5fa54caab219" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard-information.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliate-guide-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliate-guide-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliates-areas-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliates-areas-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-sales-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-sales-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-statistics-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-statistics-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/invoices-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/invoices-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/my-orders-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/my-orders-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/order-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/order-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/own-sales-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/own-sales-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-extra-fields-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-extra-fields-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-status-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-status-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/personal-page-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/personal-page-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-categories-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-categories-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-departments-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-departments-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/serving-shop-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/serving-shop-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-extra-fields-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-extra-fields-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-status-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-status-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shop-administration-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shop-administration-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-1-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-1-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-2-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-2-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-activity-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-activity-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-administration-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-administration-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-types-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-types-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/users-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/users-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/wallet-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/wallet-normal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php-menu-helper/Dashboard.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php-menu-helper/Links.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php-menu-helper/index.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" afterPath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/style.less" afterPath="$PROJECT_DIR$/assets/styles/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a7c76689-0716-4924-84bd-5fa54caab219" name="Default" comment="" />
     <ignored path="my-dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223463621" ignored="false" />
@@ -82,13 +13,14 @@
     <file path="/a.dummy" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374167746851" ignored="false" />
     <file path="/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223704438" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/assets/styles/my-dashboard.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223694580" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/assets/styles/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223713886" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223770199" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/application/models/Helper/Dashboard.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223794885" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/styles/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224453159" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224422079" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/models/Helper/Dashboard.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224404140" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223827373" ignored="false" />
     <file path="/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223815528" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223876468" ignored="false" />
     <file path="/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223864665" ignored="false" />
+    <file path="/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224422079" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
