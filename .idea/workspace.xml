@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7c76689-0716-4924-84bd-5fa54caab219" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" afterPath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/style.less" afterPath="$PROJECT_DIR$/assets/styles/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my-dashboard.iws" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_helper_dashboard.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout_helper_dashboard.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="251" column="0" selection-start="9251" selection-end="9251" vertical-scroll-proportion="0.7929448">
+            <state line="251" column="0" selection-start="9251" selection-end="9251" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1374200025000" expanded="true" signature="4123:4151" placeholder="..." />
               </folding>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="6" selection-start="690" selection-end="702" vertical-scroll-proportion="-7.6">
+            <state line="32" column="17" selection-start="691" selection-end="691" vertical-scroll-proportion="0.65625">
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
         <option value="$PROJECT_DIR$/assets/scripts/less-1.4.1.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/php-menu-helper/Dashboard.php" />
-        <option value="$PROJECT_DIR$/assets/styles/style.less" />
         <option value="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
+        <option value="$PROJECT_DIR$/assets/styles/style.less" />
       </list>
     </option>
   </component>
@@ -435,10 +435,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-menu-helper/Dashboard.php">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="28" selection-start="3833" selection-end="3833" vertical-scroll-proportion="-6.25">
-          <folding />
+        <state line="251" column="0" selection-start="9251" selection-end="9251" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1374200025000" expanded="true" signature="4123:4151" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -449,19 +451,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
+    <entry file="file://$PROJECT_DIR$/php-menu-helper/Dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="6" selection-start="690" selection-end="702" vertical-scroll-proportion="-7.6">
+        <state line="116" column="28" selection-start="3833" selection-end="3833" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
+    <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="0" selection-start="9251" selection-end="9251" vertical-scroll-proportion="0.7929448">
-          <folding>
-            <marker date="1374200025000" expanded="true" signature="4123:4151" placeholder="..." />
-          </folding>
+        <state line="32" column="17" selection-start="691" selection-end="691" vertical-scroll-proportion="0.65625">
+          <folding />
         </state>
       </provider>
     </entry>
