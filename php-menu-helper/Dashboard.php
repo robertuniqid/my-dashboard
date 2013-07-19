@@ -15,121 +15,169 @@ class Model_Helper_Dashboard {
       array(
         'name'  =>  'Pagina Produselor',
         'link'  =>  Model_Helper_Links::HOME,
+        'entypo'=>  '&#8962;',
+        'color' =>  '#3498db',
         'class' =>  'home'
       ),
       array(
         'name'  =>  'Ordinele mele',
         'link'  =>  Model_Helper_Links::SHOP_ORDERS_INDEX,
-        'class' =>  'my-orders'
+        'entypo'=>  '&#62977;',
+        'color' =>  '#2ecc71',
+        'class' =>  'my-orders',
       ),
       array(
         'name'  =>  'Portofel',
         'link'  =>  Model_Helper_Links::SHOP_ORDERS_EARNINGS_INDEX,
+        'entypo'=>  '&#128710;',
+        'color' =>  '#2ecc71',
         'class' =>  'wallet'
       ),
       array(
         'name'  =>  'Payment Types',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_PAYMENT_TYPE_INDEX,
+        'entypo'=>  '&#128203;',
+        'color' =>  '#e67e22',
         'class' =>  'payment-types'
       ),
       array(
         'name'  =>  'Payment Extra Fields',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_PAYMENT_TYPE_FIELD_INDEX,
+        'entypo'=>  '&#57347;',
+        'color' =>  '#e67e22',
         'class' =>  'payment-extra-fields'
       ),
       array(
         'name'  =>  'Payment Status List',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_PAYMENT_TYPE_STATUS_INDEX,
+        'entypo'=>  '&#57349;',
+        'color' =>  '#e67e22',
         'class' =>  'payment-status-list'
-      ),
+      ),#
       array(
         'name'  =>  'Shipping Types',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_SHIPPING_TYPE_INDEX,
+        'entypo'=>  '&#9992;',
+        'color' =>  '#f1c40f',
         'class' =>  'shipping-types'
       ),
       array(
         'name'  =>  'Shipping Extra Fields',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_SHIPPING_TYPE_FIELD_INDEX,
+        'entypo'=>  '&#57347;',
+        'color' =>  '#f1c40f',
         'class' =>  'shipping-extra-fields'
       ),
       array(
-        'name'  =>  'Shipping Status List',
+        'name'  =>  'Shipping Status Administration',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_SHIPPING_TYPE_STATUS_INDEX,
+        'entypo'=>  '&#57349;',
+        'color' =>  '#f1c40f',
         'class' =>  'shipping-status-list'
       ),
       array(
-        'name'  =>  'Product List',
+        'name'  =>  'Product Administration',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_PRODUCT_INDEX,
+        'entypo'=>  '&#128213;',
+        'color' =>  '#e74c3c',
         'class' =>  'product-list'
       ),
       array(
-        'name'  =>  'Product Category List',
+        'name'  =>  'Product Category Administration',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_PRODUCT_CATEGORY_INDEX,
+        'entypo'=>  '&#59392;',
+        'color' =>  '#e74c3c',
         'class' =>  'product-category-list'
       ),
       array(
-        'name'  =>  'Product Department List',
+        'name'  =>  'Product Department Administration',
         'link'  =>  Model_Helper_Links::SHOP_ADMINISTRATION_PRODUCT_CATEGORY_INDEX,
+        'entypo'=>  '&#128193;',
+        'color' =>  '#e74c3c',
         'class' =>  'product-department-list'
       ),
       array(
-        'name'  =>  'Users',
+        'name'  =>  'User Administration',
         'link'  =>  Model_Helper_Links::USER_ADMINISTRATION_INDEX,
+        'entypo'=>  '&#128100;',
+        'color' =>  '#34495e',
         'class' =>  'user-administration'
       ),
       array(
-        'name'  =>  'User Types',
+        'name'  =>  'User Type Administration',
         'link'  =>  Model_Helper_Links::USER_ADMINISTRATION_USER_TYPE_INDEX,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#34495e',
         'class' =>  'user-type-administration'
       ),
       array(
-        'name'  =>  'Pagina Personala',
+        'name'  =>  'Afiliere - Pagina Personala',
         'link'  =>  Model_Helper_Links::SHOP_AFFILIATE_INDEX,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#8e44ad',
         'class' =>  'affiliate-system-personal'
       ),
       array(
         'name'  =>  'Ghidul Afiliatului',
         'link'  =>  Model_Helper_Links::SHOP_AFFILIATE_GUIDE,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#8e44ad',
         'class' =>  'affiliate-system-guide'
       ),
       array(
-        'name'  =>  'Activitate Useri',
+        'name'  =>  'Afiliere - Activitate Useri',
         'link'  =>  Model_Helper_Links::SHOP_AFFILIATE_USER_ACTIVITY,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#8e44ad',
         'class' =>  'affiliate-system-user-activity'
       ),
       array(
         'name'  =>  'Statistici Afiliati',
         'link'  =>  Model_Helper_Links::SHOP_AFFILIATE_STATISTICS_INDEX,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#8e44ad',
         'class' =>  'affiliate-system-affiliate-statistics'
       ),
       array(
-        'name'  =>  'Statistici Ordine Proprii',
+        'name'  =>  'Afiliere - Statistici Ordine',
         'link'  =>  Model_Helper_Links::SHOP_AFFILIATE_ORDERS_STATISTICS_INDEX,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#8e44ad',
         'class' =>  'affiliate-system-personal-orders-statistics'
       ),
       array(
-        'name'  =>  'Statistici Ordine Globale',
+        'name'  =>  'Afiliere - Statistici Ordine Globale',
         'link'  =>  Model_Helper_Links::SHOP_AFFILIATE_ORDERS_STATISTICS_INDEX,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#8e44ad',
         'class' =>  'affiliate-system-global-orders-statistics'
       ),
       array(
-        'name'  =>  'Plata',
+        'name'  =>  'Order Servicing',
         'link'  =>  Model_Helper_Links::SHOP_SERVICING_ORDERS,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#d35400',
         'class' =>  'shop-servicing-handling'
       ),
       array(
-        'name'  =>  'Facturi',
+        'name'  =>  'Invoices',
         'link'  =>  Model_Helper_Links::SHOP_SERVICING_INVOICES,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#d35400',
         'class' =>  'shop-servicing-handling-invoices'
       ),
       array(
-        'name'  =>  'Livrare',
+        'name'  =>  'Order Shipping',
         'link'  =>  Model_Helper_Links::SHOP_SHIPPING_INDEX,
+        'entypo'=>  '&#128101;',
+        'color' =>  '#f1c40f',
         'class' =>  'shop-servicing-handling-shipping'
       ),
       array(
         'name'      =>  'Documente Administrative',
         'link'      =>  Model_Helper_Links::ADMINISTRATION_DOCUMENTS,
+        'entypo'    =>  '&#128101;',
+        'color'     =>  '#2980b9',
         'class'     =>  'administration-documents',
       ),
     );

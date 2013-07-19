@@ -1,10 +1,19 @@
+/**
+ * @note The Element Group Method has been stoped for now, it will be continued after the basic is done.
+ * @author Andrei-Robert Rusu
+ */
 var LayoutHelperDashboard = {
 
   namespace          : null,
   layoutBodyObject   : null,
-  isDisplayed        : false,
   _options           : {
-    elementEffectIn : 'fadeInLeft',
+    elementEffectIn       : ['fadeInUp', 'fadeInRight', 'fadeInDown', 'fadeInLeft'],
+    defaultEntypo         : '&#128196;',
+    defaultColor          : ['#1abc9c', '#16a085', '#f1c40f', '#f39c12', '#2ecc71', '#27ae60', '#e67e22', '#d35400', '#3498db', '#2980b9', '#e74c3c', '#c0392b', '#9b59b6', '#8e44ad', '#34495e', '#2c3e50'],
+    hoverTextColor        : '#ffffff',
+    backgroundColor       : '#393939',
+    hoverEffect           : 'pulse',
+    hoverEffectDuration   : 1000,
     minMarginX : 10,
     maxMarginX : 50,
     minMarginY : 10,
@@ -18,12 +27,12 @@ var LayoutHelperDashboard = {
   _dashboardObject   : null,
   _dashboardObjectElementsContainer : null,
   _dashboardElementGroups : {},
-  _dashboardGroupContainers : {},
 
   Init : function(options) {
-    this._options = $.extend({}, this._options, options);
+    this.layoutBodyObject = $('html > body');
 
-    this.layoutBodyObject = $('body');
+    this._options = $.extend({}, this._options, options);
+    this._options.elementEffectIn = typeof this._options.elementEffectIn == "object" ? $.makeArray(this._options.elementEffectIn) : this._options.elementEffectIn;
 
     if(typeof this._options.trigger != "undefined")
       this._triggerObject = typeof this._options.trigger == "object" ? this._options.trigger : $(this._options.trigger);
@@ -35,6 +44,39 @@ var LayoutHelperDashboard = {
       this.namespace = this._options.namespace;
 
     this._configureDashboard();
+  },
+
+  _fetchDefaultColor : function() {
+    return (this._options.defaultColor instanceof Array ?
+            this._options.defaultColor
+                [
+                  Math.floor(
+                      Math.random() * this._options.defaultColor.length
+                  )
+                ]
+            : this._options.defaultColor);
+  },
+
+  _fetchDefaultBackgroundColor : function() {
+    return (this._options.backgroundColor instanceof Array ?
+            this._options.backgroundColor
+                [
+                Math.floor(
+                    Math.random() * this._options.backgroundColor.length
+                )
+                ]
+            : this._options.backgroundColor);
+  },
+
+  _fetchDefaultHoverTextColor : function() {
+    return (this._options.hoverTextColor instanceof Array ?
+            this._options.hoverTextColor
+                [
+                  Math.floor(
+                      Math.random() * this._options.hoverTextColor.length
+                  )
+                ]
+            : this._options.hoverTextColor);
   },
 
   _configureDashboard : function() {
@@ -59,7 +101,7 @@ var LayoutHelperDashboard = {
   _assignDashboardContent : function() {
     var objectInstance = this;
     this._dashboardObjectElementsContainer = this._dashboardObject.find('.element_groups_container');
-    this._dashboardObjectElementsContainer.html();
+    this._dashboardObjectElementsContainer.html('');
 
     $.each(this._dashboardElementGroups, function(index){
       objectInstance
@@ -67,64 +109,77 @@ var LayoutHelperDashboard = {
           .append(
               objectInstance._fetchDashboardElementHTMLAtIndex(index)
           );
+      objectInstance._setDefaultStateDashboardElementHTMLAtIndex(index);
     });
 
-    $.each(this._dashboardElementGroups, function(group_index){
-      if(typeof objectInstance._dashboardElementGroups[group_index]['elements'] != "undefined") {
-        var html = '<section style="display:none" data-group-index="' + group_index+ '" class="dashboard-group-container dashboard-group-container-' + group_index + '">';
+    objectInstance
+        ._dashboardObjectElementsContainer
+        .append('<div style="clear:both;visibility: none;"></div>');
 
-        $.each(objectInstance._dashboardElementGroups[group_index].elements, function(element_index){
-          html += objectInstance._fetchDashboardGroupElementHTMLAtGroupAtIndex(group_index, element_index);
-        });
-
-        html    += '</section>';
-
-        objectInstance._dashboardObjectElementsContainer.append(html);
-      }
-    });
-
-    this._dashboardGroupContainers = this._dashboardObjectElementsContainer.find('.dashboard-group-container');
-    this._dashboardObjectElementsContainer.find('> .element:last').addClass('clearfix');
     this._assignDashboardElementsTriggers();
   },
 
+  /**
+   * This will use the addCSS function, in order to avoid jquery hover
+   * @param group_index
+   * @returns {string}
+   * @private
+   */
   _fetchDashboardElementHTMLAtIndex : function(group_index) {
     if(typeof this._dashboardElementGroups[group_index] == "undefined")
       return '';
 
     var elementInformation = this._dashboardElementGroups[group_index];
+    var color = typeof elementInformation.color == "undefined" ? this._fetchDefaultColor() : elementInformation.color,
+        backgroundColor= typeof elementInformation.backgroundColor == "undefined" ? this._fetchDefaultBackgroundColor() : elementInformation.backgroundColor,
+        hoverTextColor = typeof elementInformation.hoverTextColor == "undefined" ? this._fetchDefaultHoverTextColor() : elementInformation.hoverTextColor;
 
     var html = '';
 
-    if(typeof elementInformation.elements == "undefined")
-     html = '<section class="element ' + (typeof elementInformation.class == "undefined" ? '' : elementInformation.class) + '">' +
-                '<a href="' + elementInformation.link + '">' +
-                  '<span>' + elementInformation.name + '</span>' +
-                '</a>' +
-               '</section>';
-    else
-      html = '<section class="element ' + (typeof elementInformation.class == "undefined" ? '' : elementInformation.class) + '">' +
-              '<a data-group-index="' + group_index+ '" class="display-dashboard-group dashboard-group-' + group_index + '">' +
+    html = '<section class="element-' + group_index + ' element ' +
+              (typeof elementInformation.class == "undefined" ? '' : elementInformation.class) + '"' +
+              'data-color="' + color + '"' +
+              'data-background-color="' + backgroundColor + '"' +
+              'data-hover-text-color="' + hoverTextColor + '"' +
+             '><a href="' + elementInformation.link + '">' +
+                 '<span class="entypo">' +
+                 (
+                     typeof elementInformation.entypo == "undefined"
+                         ? this._options.defaultEntypo : elementInformation.entypo
+                     ) +
+                 '</span>' +
                 '<span>' + elementInformation.name + '</span>' +
               '</a>' +
-             '</section>';
+           '</section>';
 
     return html;
   },
 
-  _fetchDashboardGroupElementHTMLAtGroupAtIndex : function(group_index, index) {
-    if(typeof this._dashboardElementGroups[group_index]['elements'][index] == "undefined")
-      return '';
+  _setDefaultStateDashboardElementHTMLAtIndex : function(index) {
+    var elementObject = typeof index == "object" ? index : this._dashboardObjectElementsContainer.find('> .element-' + index);
 
-    var elementInformation = this._dashboardElementGroups[group_index]['elements'][index];
+    elementObject.find('> a > span').css('color', elementObject.attr('data-color'));
+    elementObject.css('background-color', elementObject.attr('data-background-color'));
+  },
 
-    var html = '<section class="element">' +
-                '<a href="' + elementInformation.link + '">' +
-                  '<span>' + elementInformation.name + '</span>' +
-                '</a>' +
-               '</section>';
+  _setHoverStateDashboardElementHTMLAtIndex : function(index) {
+    var elementObject = typeof index == "object" ? index : this._dashboardObjectElementsContainer.find('> .element-' + index);
 
-    return html;
+    elementObject.find('> a > span').css('color', elementObject.attr('data-hover-text-color'));
+    elementObject.css('background-color', elementObject.attr('data-color'));
+
+    if(typeof elementObject.attr('data-assigned-effect') != "undefined") {
+      elementObject.removeClass('animated ' + elementObject.attr('data-assigned-effect'));
+      elementObject.removeAttr('data-assigned-effect');
+    }
+
+    elementObject.attr('data-assigned-effect', this._options.hoverEffect);
+    elementObject.addClass('animated ' + this._options.hoverEffect);
+
+    setTimeout(function(){
+      elementObject.removeClass('animated ' + elementObject.attr('data-assigned-effect'));
+      elementObject.removeAttr('data-assigned-effect');
+    }, this._options.hoverEffectDuration);
   },
 
   _assignDashboardTriggers : function() {
@@ -138,17 +193,12 @@ var LayoutHelperDashboard = {
   _assignDashboardElementsTriggers : function() {
     var objectInstance = this;
 
-    this._dashboardObjectElementsContainer.find('.display-dashboard-group').bind('click', function(){
-      var group_index = $(this).data('group-index');
-
-      objectInstance._dashboardGroupContainers
-          .not('[data-group-index="' + group_index + '"]')
-          .fadeOut('slow')
-          .promise()
-          .done(function(){
-        objectInstance._dashboardGroupContainers.filter('[data-group-index="' + group_index + '"]').fadeIn('slow');
-      });
+    this._dashboardObjectElementsContainer.find('> .element').hover(function(){
+      objectInstance._setHoverStateDashboardElementHTMLAtIndex($(this));
+    }, function(){
+      objectInstance._setDefaultStateDashboardElementHTMLAtIndex($(this));
     });
+
   },
 
   Display : function() {
@@ -174,12 +224,22 @@ var LayoutHelperDashboard = {
       return;
     }
 
+    var effect = (objectInstance._options.elementEffectIn instanceof Array ?
+        objectInstance._options.elementEffectIn
+        [
+            Math.floor(
+                Math.random() * objectInstance._options.elementEffectIn.length
+            )
+        ]
+        : objectInstance._options.elementEffectIn);
+
     this._dashboardObjectElementsContainer
         .find('> .element')
         .not(':visible')
         .filter(':first')
         .show()
-        .addClass('animated ' + objectInstance._options.elementEffectIn);
+        .attr('data-assigned-effect', effect)
+        .addClass('animated ' + effect);
 
     setTimeout(function(){
       objectInstance.RecursiveAssignElementEffect();
@@ -238,7 +298,7 @@ var LayoutHelperDashboard = {
     this._dashboardObject.css('padding', paddingY + 'px ' + paddingX + 'px');
 
     this._dashboardObject.css('width', unAssignedWidth);
-    this._dashboardObject.css('height', unAssignedHeight);
+    this._dashboardObject.css('min-height', unAssignedHeight);
   }
 
 };
