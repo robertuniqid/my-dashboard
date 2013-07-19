@@ -214,6 +214,12 @@ var LayoutHelperDashboard = {
       });
     });
 
+    $(document).bind("keyup." + objectInstance.namespace, function(e){
+        if (e.keyCode == 27) {
+          objectInstance.Close();
+        }
+    });
+
     this._assignResizeEvent();
   },
 
@@ -222,6 +228,13 @@ var LayoutHelperDashboard = {
 
     if(this._haveAllDashboardElementsTriggered() ) {
       return;
+    }
+
+    var currentElement = this._dashboardObjectElementsContainer.find('> .element').not(':visible').filter(':first');
+
+    if(typeof currentElement.attr('data-assigned-effect') != "undefined") {
+      currentElement.removeClass(currentElement.attr('data-assigned-effect'));
+      currentElement.removeAttr('data-assigned-effect');
     }
 
     var effect = (objectInstance._options.elementEffectIn instanceof Array ?
@@ -233,13 +246,9 @@ var LayoutHelperDashboard = {
         ]
         : objectInstance._options.elementEffectIn);
 
-    this._dashboardObjectElementsContainer
-        .find('> .element')
-        .not(':visible')
-        .filter(':first')
-        .show()
-        .attr('data-assigned-effect', effect)
-        .addClass('animated ' + effect);
+    currentElement.show()
+                  .attr('data-assigned-effect', effect)
+                  .addClass('animated ' + effect);
 
     setTimeout(function(){
       objectInstance.RecursiveAssignElementEffect();
@@ -253,6 +262,8 @@ var LayoutHelperDashboard = {
   Close   : function() {
     this.layoutBodyObject.children().fadeIn('slow');
     this._dashboardObject.fadeOut('slow');
+
+    $(document).unbind("keyup." + objectInstance.namespace);
 
     this._unAssignResizeEvent();
   },
