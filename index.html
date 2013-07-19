@@ -10,8 +10,8 @@
       <script type="text/javascript">
         $(document).ready(function(event){
           $.ajax({
-            type: "POST",
-            url: "php-menu-helper/index.php",
+            type: "GET",
+            url: "dashboard-information.json",
             dataType: 'JSON'
           }).done(function( response ) {
             LayoutHelperDashboard.Init({

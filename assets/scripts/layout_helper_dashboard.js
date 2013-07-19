@@ -1,5 +1,5 @@
 /**
- * @note The Element Group Method has been stoped for now, it will be continued after the basic is done.
+ * @note The Element Group Method has been stopped for now, it will be continued after the basic is done.
  * @author Andrei-Robert Rusu
  */
 var LayoutHelperDashboard = {
@@ -208,7 +208,7 @@ var LayoutHelperDashboard = {
 
     objectInstance._dashboardObjectElementsContainer.find(' > .element').hide();
 
-    this.layoutBodyObject.children().fadeOut('fast').promise().done(function(){
+    this.layoutBodyObject.children().filter(':visible').addClass(objectInstance.namespace + '-hidden').fadeOut('fast').promise().done(function(){
       objectInstance._dashboardObject.fadeIn('slow').promise().done(function(){
         objectInstance.RecursiveAssignElementEffect();
       });
@@ -260,7 +260,7 @@ var LayoutHelperDashboard = {
   },
 
   Close   : function() {
-    this.layoutBodyObject.children().fadeIn('slow');
+    this.layoutBodyObject.children().filter('.' + this.namespace + '-hidden').removeClass(this.namespace + '-hidden').fadeIn('slow');
     this._dashboardObject.fadeOut('slow');
 
     $(document).unbind("keyup." + objectInstance.namespace);

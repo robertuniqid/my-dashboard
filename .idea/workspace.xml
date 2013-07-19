@@ -2,19 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7c76689-0716-4924-84bd-5fa54caab219" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard-information.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliate-guide-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliate-guide-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliates-areas-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/affiliates-areas-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-sales-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-sales-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-statistics-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/global-statistics-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/invoices-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/invoices-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/my-orders-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/my-orders-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/order-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/order-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/own-sales-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/own-sales-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-extra-fields-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-extra-fields-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-status-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/payment-type-status-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/personal-page-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/personal-page-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-categories-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-categories-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-departments-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-departments-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/product-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/serving-shop-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/serving-shop-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-extra-fields-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-extra-fields-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-status-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shipping-type-status-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shop-administration-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shop-administration-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-1-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-1-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-2-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-2-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/stored-files-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-activity-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-activity-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-administration-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-administration-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-types-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/user-types-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/users-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/users-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/wallet-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/wallet-normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php-menu-helper/Dashboard.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php-menu-helper/Links.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php-menu-helper/index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" afterPath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/style.less" afterPath="$PROJECT_DIR$/assets/styles/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my-dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374182119846" ignored="false" />
-    <file path="/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374199871988" ignored="false" />
+    <file path="/Dummy.txt" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223463621" ignored="false" />
+    <file path="/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223616258" ignored="false" />
     <file path="/index.html" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374182997377" ignored="false" />
     <file path="/style.css" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374169726713" ignored="false" />
     <file path="/Menu.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374171808000" ignored="false" />
     <file path="/index.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374165833755" ignored="false" />
     <file path="/a.dummy" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374167746851" ignored="false" />
-    <file path="/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374198679724" ignored="false" />
+    <file path="/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223704438" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/styles/my-dashboard.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223694580" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/styles/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223713886" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223770199" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/models/Helper/Dashboard.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223794885" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223827373" ignored="false" />
+    <file path="/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223815528" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223876468" ignored="false" />
+    <file path="/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223864665" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +108,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="913" selection-end="913" vertical-scroll-proportion="-13.75">
+            <state line="13" column="44" selection-start="587" selection-end="587" vertical-scroll-proportion="0.2979719">
               <folding />
             </state>
           </provider>
@@ -46,27 +120,18 @@
       <file leaf-file-name="layout_helper_dashboard.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="251" column="0" selection-start="9251" selection-end="9251" vertical-scroll-proportion="0.0">
+            <state line="1" column="48" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1374200025000" expanded="true" signature="4123:4151" placeholder="..." />
+                <marker date="1374224073000" expanded="false" signature="4124:4152" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-menu-helper/Dashboard.php">
+      <file leaf-file-name="dashboard-information.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard-information.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="28" selection-start="3833" selection-end="3833" vertical-scroll-proportion="-6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="17" selection-start="691" selection-end="691" vertical-scroll-proportion="0.65625">
+            <state line="0" column="3585" selection-start="3585" selection-end="3585" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -96,10 +161,11 @@
         <option value="$PROJECT_DIR$/php-menu-helper/index.php" />
         <option value="$PROJECT_DIR$/assets/styles/style.css" />
         <option value="$PROJECT_DIR$/assets/scripts/less-1.4.1.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/php-menu-helper/Dashboard.php" />
-        <option value="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
         <option value="$PROJECT_DIR$/assets/styles/style.less" />
+        <option value="$PROJECT_DIR$/dashboard-information.json" />
+        <option value="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -164,20 +230,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php-menu-helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -217,20 +269,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -245,8 +283,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -287,7 +325,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532751" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -363,43 +401,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-menu-helper/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="90" selection-end="108" vertical-scroll-proportion="0.11700468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-menu-helper/Links.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.2574103">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/shipping-normal.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/shipping-hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/shipping-type-hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/shipping-type-status-hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/shipping-type-status-normal.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/less-1.4.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13441" selection-start="78986" selection-end="78986" vertical-scroll-proportion="0.23006135">
@@ -407,11 +408,6 @@
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/shipping-type-normal.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/animate.min.css">
@@ -423,44 +419,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../impulsul/assets/styles/general.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="2877" selection-end="2979" vertical-scroll-proportion="0.71875">
-          <folding />
-        </state>
+        <state line="99" column="0" selection-start="2877" selection-end="2979" vertical-scroll-proportion="0.71875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../impulsul/assets/styles/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.1171875">
+        <state line="5" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.1171875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="19" selection-start="556" selection-end="556" vertical-scroll-proportion="0.296875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="0" selection-start="9251" selection-end="9251" vertical-scroll-proportion="0.0">
+        <state line="1" column="48" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1374200025000" expanded="true" signature="4123:4151" placeholder="..." />
+            <marker date="1374224073000" expanded="false" signature="4124:4152" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-information.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3585" selection-start="3585" selection-end="3585" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="913" selection-end="913" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-menu-helper/Dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="28" selection-start="3833" selection-end="3833" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="17" selection-start="691" selection-end="691" vertical-scroll-proportion="0.65625">
+        <state line="13" column="44" selection-start="587" selection-end="587" vertical-scroll-proportion="0.2979719">
           <folding />
         </state>
       </provider>
