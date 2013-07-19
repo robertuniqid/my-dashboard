@@ -185,7 +185,9 @@ var LayoutHelperDashboard = {
   _assignDashboardTriggers : function() {
     var objectInstance = this;
 
-    this._triggerObject.bind('click', function(){
+    this._triggerObject.bind('click', function(event){
+      event.stopPropagation();
+      event.preventDefault();
       objectInstance.Display();
     });
   },

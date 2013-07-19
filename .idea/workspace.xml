@@ -5,22 +5,27 @@
     <ignored path="my-dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223463621" ignored="false" />
-    <file path="/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223616258" ignored="false" />
+    <file path="/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226235891" ignored="false" />
     <file path="/index.html" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374182997377" ignored="false" />
     <file path="/style.css" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374169726713" ignored="false" />
     <file path="/Menu.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374171808000" ignored="false" />
     <file path="/index.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374165833755" ignored="false" />
     <file path="/a.dummy" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374167746851" ignored="false" />
-    <file path="/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223704438" ignored="false" />
+    <file path="/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224614026" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/assets/styles/my-dashboard.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223694580" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/assets/styles/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224453159" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224422079" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/styles/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225050075" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225584787" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Helper/Dashboard.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224404140" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223827373" ignored="false" />
     <file path="/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223815528" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223876468" ignored="false" />
     <file path="/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223864665" ignored="false" />
-    <file path="/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224422079" ignored="false" />
+    <file path="/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225584787" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/styles/animate.css.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224578908" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/scripts/layout_helper/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226237092" ignored="false" />
+    <file path="/stepout.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224941968" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/scripts/request_handler/stepout.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224944086" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/styles/general.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225066260" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
