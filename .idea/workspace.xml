@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7c76689-0716-4924-84bd-5fa54caab219" name="Default" comment="" />
+    <list default="true" id="a7c76689-0716-4924-84bd-5fa54caab219" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" afterPath="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="my-dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223463621" ignored="false" />
+    <file path="/Dummy.txt" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374411926899" ignored="false" />
     <file path="/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226235891" ignored="false" />
     <file path="/index.html" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374182997377" ignored="false" />
     <file path="/style.css" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374169726713" ignored="false" />
@@ -14,7 +17,7 @@
     <file path="/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224614026" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/assets/styles/my-dashboard.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223694580" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/assets/styles/style.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225050075" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225584787" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/layouts/scripts/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226758191" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Helper/Dashboard.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224404140" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/application/models/Ajax/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223827373" ignored="false" />
     <file path="/User.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223815528" ignored="false" />
@@ -22,10 +25,11 @@
     <file path="/UserInformation.php" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374223864665" ignored="false" />
     <file path="/layout.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225584787" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/assets/styles/animate.css.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224578908" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/assets/scripts/layout_helper/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226237092" ignored="false" />
-    <file path="/stepout.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224941968" ignored="false" />
-    <file path="$PROJECT_DIR$/../../stepout/assets/scripts/request_handler/stepout.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374224944086" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/scripts/layout_helper/layout_helper_dashboard.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374227071170" ignored="false" />
+    <file path="/stepout.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226437100" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/assets/scripts/request_handler/stepout.js" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374227085385" ignored="false" />
     <file path="$PROJECT_DIR$/../../stepout/assets/styles/general.less" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374225066260" ignored="false" />
+    <file path="$PROJECT_DIR$/../../stepout/application/views/scripts/index/index.phtml" changelist="a7c76689-0716-4924-84bd-5fa54caab219" time="1374226911652" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +49,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="587" selection-end="587" vertical-scroll-proportion="0.2979719">
+            <state line="19" column="29" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout_helper_dashboard.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout_helper_dashboard.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="48" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+            <state line="9" column="149" selection-start="407" selection-end="407" vertical-scroll-proportion="0.23466258">
               <folding>
-                <marker date="1374224073000" expanded="false" signature="4124:4152" placeholder="..." />
+                <marker date="1374411952000" expanded="false" signature="4189:4217" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -68,7 +72,7 @@
       <file leaf-file-name="dashboard-information.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard-information.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="3585" selection-start="3585" selection-end="3585" vertical-scroll-proportion="-0.0">
+            <state line="0" column="3585" selection-start="3585" selection-end="3585" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,8 +105,8 @@
         <option value="$PROJECT_DIR$/php-menu-helper/Dashboard.php" />
         <option value="$PROJECT_DIR$/assets/styles/style.less" />
         <option value="$PROJECT_DIR$/dashboard-information.json" />
-        <option value="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js" />
       </list>
     </option>
   </component>
@@ -157,60 +161,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -262,7 +212,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26419213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -338,20 +288,60 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/scripts/less-1.4.1.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13441" selection-start="78986" selection-end="78986" vertical-scroll-proportion="0.23006135">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-information.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3585" selection-start="3585" selection-end="3585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="83" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1374411952000" expanded="false" signature="4189:4217" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/animate.min.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="42379" selection-start="42373" selection-end="42379" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="697" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1374411952000" expanded="false" signature="4189:4217" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard-information.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3585" selection-start="3585" selection-end="3585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/less-1.4.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13441" selection-start="78986" selection-end="78986" vertical-scroll-proportion="0.23006135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="42379" selection-start="42373" selection-end="42379" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../impulsul/assets/styles/general.less">
@@ -366,17 +356,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="556" selection-end="556" vertical-scroll-proportion="0.296875">
-          <folding />
-        </state>
+        <state line="24" column="19" selection-start="556" selection-end="556" vertical-scroll-proportion="0.296875" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="48" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1374224073000" expanded="false" signature="4124:4152" placeholder="..." />
-          </folding>
+        <state line="19" column="29" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -387,10 +373,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/layout_helper_dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="587" selection-end="587" vertical-scroll-proportion="0.2979719">
-          <folding />
+        <state line="9" column="149" selection-start="407" selection-end="407" vertical-scroll-proportion="0.23466258">
+          <folding>
+            <marker date="1374411952000" expanded="false" signature="4189:4217" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
