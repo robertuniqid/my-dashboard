@@ -2,7 +2,7 @@ my-dashboard
 ============
 
 My Dashboard is a Dashboard system
-You can preview it here : http://easy-development.com/my-dashboard
+You can preview it here : http://demonstration.easy-development.com/my-dashboard
 
 This is really easy to use
 
